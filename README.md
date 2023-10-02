@@ -1,23 +1,2 @@
 # Devopsnotes
-overview of IAM:
-> Aws IAM service is provided in order to manage access to the resources by creating users, groups and roles.
 
-> users represent an individual or entities who needs access to aws resources.
-
-> Groups are collection of users with similar acccess requirements, making it easier to manage the permissions
-
-> Roles are used to grant the temporary access to the external entities or services.
-
-> Access control and permission defining can be done using policies know as IAM policies in AWS.
-
-> IAM policies are written in JSON format specifying actions like allow or deny for specific aws resource.
-
-> these polices can be attached to IAM entities to like user, groups, and roles to specify the access for aws resource and services.
-
-> IAM in Aws follows principle of least privilege access i.e giving only necessay permissions to the entities for the taks to be completed and reduce the security risks.
-
-> It also provide multifactor authentication, and audit trails for checking the user activity and chages to permissions.
-
-> AWS IAM ensures effective management and secure access to the aws resources by allowing only authorized users have appropriate permissions.
-
-> it also ensures accountability and compliance by logging the actions 
