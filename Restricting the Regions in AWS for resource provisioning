@@ -1,0 +1,26 @@
+#Restricting users to specific AWS region
+> To list the aws regions use following command
+  aws.ec2 describe-regions --output table
+
+> To list the regions of specific service like ec2 use following python code
+
+import boto3
+ec2 = boto3.describe_regions()
+response = ec2.describe_regions()
+print('Regions:' response['Regions']
+
+> The benifits of using a specific region for the user to create the resources are :
+1.Easy cost tracking of the resources in specific region and restrict creating resources in other regions
+2.Reducing the blast redius to detect the activity in the specific regions and improve cloud security posture.
+
+> Deactivate the region:
+AWS provide the option of diablign STS credential generations for unused regions by the user.
+      Steps to deactivate
+      1.got to IAM console
+      2. select account settings 
+      3. we can see the option deactivate 
+      
+> Creating EC2 and S3 services to be in us-west-2 and us-east-1
+      this can be done using the terraform script 
+      refer to manifest.tf for the terraform script
+
